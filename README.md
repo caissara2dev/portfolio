@@ -128,7 +128,6 @@ Digital showcase featuring:
 - **Hosting**: $60/year (Linode VPS)
 - **CDN**: Free (Cloudflare)
 - **SSL**: Free (Let's Encrypt)
-- **Total**: ~$72/year
 
 ---
 
