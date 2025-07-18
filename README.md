@@ -85,7 +85,12 @@ Digital showcase featuring:
    cd portfolio-website
    ```
 
-2. **Open in browser**
+2. **Switch to development branch**
+   ```bash
+   git checkout development
+   ```
+
+3. **Open in browser**
    ```bash
    # Simply open index.html in your preferred browser
    # Or use a local server (recommended)
@@ -94,11 +99,31 @@ Digital showcase featuring:
    npx serve .
    ```
 
-3. **Development**
+4. **Development workflow**
    ```bash
    # Use Live Server extension in VS Code for hot reload
    # Or any local development server
+   
+   # Make changes on development branch
+   git add .
+   git commit -m "Your commit message"
+   
+   # When ready to merge to main
+   git checkout master
+   git merge development
    ```
+
+## 🌿 Git Branching Strategy
+
+- **`master`**: Production-ready code, stable releases only
+- **`development`**: Active development branch for new features
+- **Feature branches**: Create from development for specific features
+
+**Workflow**:
+1. All development work happens on the `development` branch
+2. Create feature branches from `development` for major features
+3. Merge completed features back to `development`
+4. Merge `development` to `master` only when ready for production
 
 ## 🔄 Development Progress
 
