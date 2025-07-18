@@ -77,15 +77,7 @@ Digital showcase featuring:
 - [ ] Skills showcase page
 - [ ] Contact form implementation
 
-### Phase 4: Blog System (Week 8-9)
-- [ ] Blog listing page
-- [ ] Article template
-- [ ] Markdown parser integration
-- [ ] Syntax highlighting setup
-- [ ] RSS feed generation
-- [ ] SEO optimization for articles
-
-### Phase 5: Polish & Optimization (Week 10-11)
+### Phase 4: Polish & Optimization (Week 8-9)
 - [ ] Performance optimization
 - [ ] Cross-browser testing
 - [ ] Mobile responsiveness testing
@@ -93,7 +85,7 @@ Digital showcase featuring:
 - [ ] Animation refinements
 - [ ] Content loading optimization
 
-### Phase 6: Deployment (Week 12)
+### Phase 6: Deployment (Week 10)
 - [ ] Server setup and configuration
 - [ ] SSL certificate installation
 - [ ] Domain configuration

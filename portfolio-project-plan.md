@@ -51,12 +51,8 @@ Create a vibrant, interactive portfolio website that serves as a digital showcas
 ├── projects/
 │   ├── index.html (Projects Overview)
 │   └── [project-name].html (Individual Project Pages)
-├── blog/
-│   ├── index.html (Blog Overview)
-│   └── [article-slug].html (Individual Articles)
 ├── skills.html (Skills & Technologies)
-├── contact.html (Contact Form)
-└── resume.html (Resume Download)
+└──  contact.html (Contact Form)
 ```
 
 ### Navigation Structure
@@ -70,11 +66,8 @@ Create a vibrant, interactive portfolio website that serves as a digital showcas
 - `/about` - About section
 - `/projects` - Project showcase
 - `/projects/[project-name]` - Individual project details
-- `/blog` - Technical blog
-- `/blog/[article-slug]` - Individual blog post
 - `/skills` - Skills and technologies
 - `/contact` - Contact form
-- `/resume` - Resume download
 
 ## 4. Design Guidelines
 
@@ -86,7 +79,6 @@ Create a vibrant, interactive portfolio website that serves as a digital showcas
 - **Icons**: Custom SVG icons with consistent stroke width
 
 ### Design Principles
-- **Mobile-First**: Responsive design starting from mobile
 - **Accessibility**: WCAG 2.1 AA compliance
 - **Performance**: Optimized animations that don't impact load time
 - **Consistency**: Unified design language across all pages
@@ -110,40 +102,24 @@ Create a vibrant, interactive portfolio website that serves as a digital showcas
 - **Details**: Live demo, GitHub repo, tech stack, screenshots
 - **Animations**: Hover zoom, loading skeletons
 
-#### 2. Technical Blog
-- **Markdown Support**: Articles written in markdown
-- **Syntax Highlighting**: Prism.js for code blocks
-- **Categories**: Tutorials, Projects, Tips & Tricks
-- **Tags**: Technology-specific tags
-- **RSS Feed**: Auto-generated RSS for subscribers
-- **SEO**: Structured data for articles
-
-#### 3. Interactive Elements
+#### 2. Interactive Elements
 - **Theme Toggle**: Smooth transition between light/dark modes
 - **Animations**: Scroll-triggered animations using Intersection Observer
 - **Particle Background**: Subtle animated background on hero section
 - **Typing Animation**: Auto-type effect for hero text
 - **Progress Bars**: Animated skill indicators
 
-#### 4. Contact System
+#### 3. Contact System
 - **Form**: Name, email, subject, message with validation
 - **Spam Protection**: Honeypot technique + rate limiting
 - **Notifications**: Success/error messages with animations
 - **Integration**: Email forwarding to personal inbox
 - **Validation**: Client and server-side validation
 
-#### 5. Resume Features
-- **Download**: PDF resume with consistent branding
-- **Skills Visualization**: Interactive radar charts
-- **Experience Timeline**: Vertical timeline with animations
-- **Certifications**: Badges and verification links
-
 ### Advanced Features
 - **PWA Support**: Service worker for offline functionality
-- **Analytics**: Privacy-focused analytics (Plausible)
 - **Search**: Site-wide search with fuzzy matching
 - **Comments**: Static-friendly comment system (Utterances)
-- **Newsletter**: Email subscription for blog updates
 
 ## 6. Development Timeline
 
@@ -168,18 +144,9 @@ Create a vibrant, interactive portfolio website that serves as a digital showcas
 - [ ] About page with personal story
 - [ ] Projects listing page
 - [ ] Individual project pages
-- [ ] Skills showcase page
 - [ ] Contact form implementation
 
-### Phase 4: Blog System (Week 8-9)
-- [ ] Blog listing page
-- [ ] Article template
-- [ ] Markdown parser integration
-- [ ] Syntax highlighting setup
-- [ ] RSS feed generation
-- [ ] SEO optimization for articles
-
-### Phase 5: Polish & Optimization (Week 10-11)
+### Phase 4: Polish & Optimization (Week 10-11)
 - [ ] Performance optimization
 - [ ] Cross-browser testing
 - [ ] Mobile responsiveness testing
@@ -187,7 +154,7 @@ Create a vibrant, interactive portfolio website that serves as a digital showcas
 - [ ] Animation refinements
 - [ ] Content loading optimization
 
-### Phase 6: Deployment (Week 12)
+### Phase 5: Deployment (Week 12)
 - [ ] Server setup and configuration
 - [ ] SSL certificate installation
 - [ ] Domain configuration
@@ -232,7 +199,6 @@ Create a vibrant, interactive portfolio website that serves as a digital showcas
 - **Analytics**: Monthly traffic analysis
 
 ### Content Management
-- **Blog**: Weekly article updates
 - **Projects**: Add new projects as completed
 - **Skills**: Update with new technologies learned
 - **Resume**: Quarterly updates with new experience
@@ -250,7 +216,6 @@ Create a vibrant, interactive portfolio website that serves as a digital showcas
 - **Hosting**: $5/month (Linode VPS)
 - **CDN**: Free (Cloudflare)
 - **SSL**: Free (Let's Encrypt)
-- **Total**: ~$72/year
 
 ### Time Investment
 - **Development**: 120 hours (12 weeks @ 10 hrs/week)
