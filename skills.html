@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore my technical skills and expertise in web development, including frontend, backend, and modern development tools">
+    <meta name="keywords" content="skills, web development, frontend, backend, javascript, react, node.js, css, html">
+    <meta name="author" content="Your Name">
+    <title>Skills & Technologies - Your Name | Web Developer Portfolio</title>
+    
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__container">
+                <a href="/" class="nav__logo">
+                    <span class="nav__logo-text">Portfolio</span>
+                </a>
+                
+                <ul class="nav__menu" id="nav-menu">
+                    <li class="nav__item">
+                        <a href="/" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="projects/" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="skills.html" class="nav__link nav__link--active">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="nav__actions">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                        <span class="theme-toggle__icon"></span>
+                    </button>
+                    
+                    <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+                        <span class="nav__toggle-line"></span>
+                        <span class="nav__toggle-line"></span>
+                        <span class="nav__toggle-line"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header__content">
+                    <h1 class="page-header__title">Skills & Technologies</h1>
+                    <p class="page-header__subtitle">The tools and technologies I use to create amazing experiences</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Overview -->
+        <section class="skills-overview">
+            <div class="container">
+                <div class="skills-overview__content">
+                    <h2 class="section__title">Technical Expertise</h2>
+                    <p class="section__subtitle">
+                        I'm passionate about staying current with the latest technologies and best practices. 
+                        Here's an overview of my technical skills and proficiency levels.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Frontend Skills -->
+        <section class="skills-section">
+            <div class="container">
+                <h2 class="skills-section__title">Frontend Development</h2>
+                <p class="skills-section__description">
+                    Creating beautiful, responsive, and interactive user interfaces
+                </p>
+                
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-card__header">
+                            <div class="skill-card__icon">
+                                <span class="skill-icon">HTML5</span>
+                            </div>
+                            <div class="skill-card__info">
+                                <h3 class="skill-card__name">HTML5</h3>
+                                <span class="skill-card__level">Expert</span>
+                            </div>
+                        </div>
+                        <div class="skill-card__progress">
+                            <div class="progress-bar">
+                                <div class="progress-bar__fill" data-progress="95"></div>
+                            </div>
+                            <span class="skill-card__percentage">95%</span>
+                        </div>
+                        <p class="skill-card__description">
+                            Semantic markup, accessibility standards, modern HTML5 APIs, and web components.
+                        </p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-card__header">
+                            <div class="skill-card__icon">
+                                <span class="skill-icon">CSS3</span>
+                            </div>
+                            <div class="skill-card__info">
+                                <h3 class="skill-card__name">CSS3</h3>
+                                <span class="skill-card__level">Expert</span>
+                            </div>
+                        </div>
+                        <div class="skill-card__progress">
+                            <div class="progress-bar">
+                                <div class="progress-bar__fill" data-progress="92"></div>
+                            </div>
+                            <span class="skill-card__percentage">92%</span>
+                        </div>
+                        <p class="skill-card__description">
+                            Advanced CSS, Flexbox, Grid, animations, responsive design, and CSS preprocessors.
+                        </p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-card__header">
+                            <div class="skill-card__icon">
+                                <span class="skill-icon">JS</span>
+                            </div>
+                            <div class="skill-card__info">
+                                <h3 class="skill-card__name">JavaScript</h3>
+                                <span class="skill-card__level">Expert</span>
+                            </div>
+                        </div>
+                        <div class="skill-card__progress">
+                            <div class="progress-bar">
+                                <div class="progress-bar__fill" data-progress="90"></div>
+                            </div>
+                            <span class="skill-card__percentage">90%</span>
+                        </div>
+                        <p class="skill-card__description">
+                            ES6+, DOM manipulation, async/await, modules, and modern JavaScript patterns.
+                        </p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-card__header">
+                            <div class="skill-card__icon">
+                                <span class="skill-icon">React</span>
+                            </div>
+                            <div class="skill-card__info">
+                                <h3 class="skill-card__name">React</h3>
+                                <span class="skill-card__level">Advanced</span>
+                            </div>
+                        </div>
+                        <div class="skill-card__progress">
+                            <div class="progress-bar">
+                                <div class="progress-bar__fill" data-progress="85"></div>
+                            </div>
+                            <span class="skill-card__percentage">85%</span>
+                        </div>
+                        <p class="skill-card__description">
+                            Hooks, Context API, component lifecycle, state management, and React ecosystem.
+                        </p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-card__header">
+                            <div class="skill-card__icon">
+                                <span class="skill-icon">Vue</span>
+                            </div>
+                            <div class="skill-card__info">
+                                <h3 class="skill-card__name">Vue.js</h3>
+                                <span class="skill-card__level">Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="skill-card__progress">
+                            <div class="progress-bar">
+                                <div class="progress-bar__fill" data-progress="75"></div>
+                            </div>
+                            <span class="skill-card__percentage">75%</span>
+                        </div>
+                        <p class="skill-card__description">
+                            Vue 3 Composition API, Vuex, Vue Router, and component-based architecture.
+                        </p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-card__header">
+                            <div class="skill-card__icon">
+                                <span class="skill-icon">Tailwind</span>
+                            </div>
+                            <div class="skill-card__info">
+                                <h3 class="skill-card__name">Tailwind CSS</h3>
+                                <span class="skill-card__level">Advanced</span>
+                            </div>
+                        </div>
+                        <div class="skill-card__progress">
+                            <div class="progress-bar">
+                                <div class="progress-bar__fill" data-progress="88"></div>
+                            </div>
+                            <span class="skill-card__percentage">88%</span>
+                        </div>
+                        <p class="skill-card__description">
+                            Utility-first CSS framework, custom configurations, and responsive design patterns.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Backend Skills -->
+        <section class="skills-section">
+            <div class="container">
+                <h2 class="skills-section__title">Backend Development</h2>
+                <p class="skills-section__description">
+                    Building robust, scalable server-side applications and APIs
+                </p>
+                
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-card__header">
+                            <div class="skill-card__icon">
+                                <span class="skill-icon">Node</span>
+                            </div>
+                            <div class="skill-card__info">
+                                <h3 class="skill-card__name">Node.js</h3>
+                                <span class="skill-card__level">Advanced</span>
+                            </div>
+                        </div>
+                        <div class="skill-card__progress">
+                            <div class="progress-bar">
+                                <div class="progress-bar__fill" data-progress="82"></div>
+                            </div>
+                            <span class="skill-card__percentage">82%</span>
+                        </div>
+                        <p class="skill-card__description">
+                            Express.js, RESTful APIs, middleware, authentication, and server-side JavaScript.
+                        </p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-card__header">
+                            <div class="skill-card__icon">
+                                <span class="skill-icon">MongoDB</span>
+                            </div>
+                            <div class="skill-card__info">
+                                <h3 class="skill-card__name">MongoDB</h3>
+                                <span class="skill-card__level">Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="skill-card__progress">
+                            <div class="progress-bar">
+                                <div class="progress-bar__fill" data-progress="78"></div>
+                            </div>
+                            <span class="skill-card__percentage">78%</span>
+                        </div>
+                        <p class="skill-card__description">
+                            NoSQL database design, aggregation pipelines, indexing, and Mongoose ODM.
+                        </p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-card__header">
+                            <div class="skill-card__icon">
+                                <span class="skill-icon">PostgreSQL</span>
+                            </div>
+                            <div class="skill-card__info">
+                                <h3 class="skill-card__name">PostgreSQL</h3>
+                                <span class="skill-card__level">Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="skill-card__progress">
+                            <div class="progress-bar">
+                                <div class="progress-bar__fill" data-progress="72"></div>
+                            </div>
+                            <span class="skill-card__percentage">72%</span>
+                        </div>
+                        <p class="skill-card__description">
+                            Relational database design, complex queries, indexing, and performance optimization.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools & Technologies -->
+        <section class="skills-section">
+            <div class="container">
+                <h2 class="skills-section__title">Tools & Technologies</h2>
+                <p class="skills-section__description">
+                    Development tools and technologies that enhance my workflow
+                </p>
+                
+                <div class="tools-grid">
+                    <div class="tool-item">
+                        <div class="tool-item__icon">
+                            <span class="tool-icon">Git</span>
+                        </div>
+                        <h3 class="tool-item__name">Git & GitHub</h3>
+                        <p class="tool-item__description">Version control and collaboration</p>
+                    </div>
+                    
+                    <div class="tool-item">
+                        <div class="tool-item__icon">
+                            <span class="tool-icon">VS Code</span>
+                        </div>
+                        <h3 class="tool-item__name">VS Code</h3>
+                        <p class="tool-item__description">Primary development environment</p>
+                    </div>
+                    
+                    <div class="tool-item">
+                        <div class="tool-item__icon">
+                            <span class="tool-icon">Figma</span>
+                        </div>
+                        <h3 class="tool-item__name">Figma</h3>
+                        <p class="tool-item__description">UI/UX design and prototyping</p>
+                    </div>
+                    
+                    <div class="tool-item">
+                        <div class="tool-item__icon">
+                            <span class="tool-icon">Docker</span>
+                        </div>
+                        <h3 class="tool-item__name">Docker</h3>
+                        <p class="tool-item__description">Containerization and deployment</p>
+                    </div>
+                    
+                    <div class="tool-item">
+                        <div class="tool-item__icon">
+                            <span class="tool-icon">AWS</span>
+                        </div>
+                        <h3 class="tool-item__name">AWS</h3>
+                        <p class="tool-item__description">Cloud services and hosting</p>
+                    </div>
+                    
+                    <div class="tool-item">
+                        <div class="tool-item__icon">
+                            <span class="tool-icon">Webpack</span>
+                        </div>
+                        <h3 class="tool-item__name">Webpack</h3>
+                        <p class="tool-item__description">Module bundling and optimization</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta__content">
+                    <h2 class="cta__title">Ready to Work Together?</h2>
+                    <p class="cta__description">
+                        Let's discuss how my skills can help bring your project to life. 
+                        I'm always excited to take on new challenges and create something amazing.
+                    </p>
+                    <div class="cta__actions">
+                        <a href="contact.html" class="btn btn--primary">Start a Project</a>
+                        <a href="projects/" class="btn btn--secondary">View My Work</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3 class="footer__title">Let's Connect</h3>
+                    <p class="footer__text">Ready to bring your ideas to life? Let's work together!</p>
+                    <a href="contact.html" class="btn btn--primary btn--small">Get In Touch</a>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Quick Links</h3>
+                    <ul class="footer__links">
+                        <li><a href="/" class="footer__link">Home</a></li>
+                        <li><a href="about.html" class="footer__link">About</a></li>
+                        <li><a href="projects/" class="footer__link">Projects</a></li>
+                        <li><a href="skills.html" class="footer__link">Skills</a></li>
+                        <li><a href="contact.html" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Follow Me</h3>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="GitHub">GitHub</a>
+                        <a href="#" class="footer__social-link" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="#" class="footer__social-link" aria-label="Twitter">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2024 Your Name. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/utils.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

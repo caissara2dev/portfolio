@@ -148,3 +148,7 @@ drafts/
 private/
 notes.md
 TODO.md
+
+# Temporary diagram files
+mermaid_diagram_*.png
+*.mermaid

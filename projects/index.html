@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore my portfolio of web development projects, featuring responsive websites, web applications, and creative digital solutions">
+    <meta name="keywords" content="portfolio, projects, web development, websites, applications, frontend, backend">
+    <meta name="author" content="Your Name">
+    <title>Projects - Your Name | Web Developer Portfolio</title>
+    
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/main.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__container">
+                <a href="../" class="nav__logo">
+                    <span class="nav__logo-text">Portfolio</span>
+                </a>
+                
+                <ul class="nav__menu" id="nav-menu">
+                    <li class="nav__item">
+                        <a href="../" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../about.html" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../projects/" class="nav__link nav__link--active">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../skills.html" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="nav__actions">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                        <span class="theme-toggle__icon"></span>
+                    </button>
+                    
+                    <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+                        <span class="nav__toggle-line"></span>
+                        <span class="nav__toggle-line"></span>
+                        <span class="nav__toggle-line"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header__content">
+                    <h1 class="page-header__title">My Projects</h1>
+                    <p class="page-header__subtitle">A showcase of my recent work and creative solutions</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Filter & Search -->
+        <section class="projects-controls">
+            <div class="container">
+                <div class="projects-controls__content">
+                    <!-- Search Bar -->
+                    <div class="search-bar">
+                        <input 
+                            type="text" 
+                            id="project-search" 
+                            class="search-bar__input" 
+                            placeholder="Search projects..."
+                            aria-label="Search projects"
+                        >
+                        <button class="search-bar__button" aria-label="Search">
+                            <span class="search-icon">🔍</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Filter Buttons -->
+                    <div class="filter-buttons">
+                        <button class="filter-btn filter-btn--active" data-filter="all">
+                            All Projects
+                        </button>
+                        <button class="filter-btn" data-filter="frontend">
+                            Frontend
+                        </button>
+                        <button class="filter-btn" data-filter="fullstack">
+                            Full Stack
+                        </button>
+                        <button class="filter-btn" data-filter="react">
+                            React
+                        </button>
+                        <button class="filter-btn" data-filter="vue">
+                            Vue.js
+                        </button>
+                        <button class="filter-btn" data-filter="nodejs">
+                            Node.js
+                        </button>
+                    </div>
+                    
+                    <!-- Results Counter -->
+                    <div class="results-counter">
+                        <span id="results-count">6</span> projects found
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Grid -->
+        <section class="projects-grid">
+            <div class="container">
+                <div class="projects-masonry" id="projects-container">
+                    <!-- Project 1: E-commerce Platform -->
+                    <article class="project-card" data-category="fullstack react nodejs">
+                        <div class="project-card__image">
+                            <img src="../assets/images/projects/ecommerce-platform.jpg" alt="E-commerce Platform" loading="lazy">
+                            <div class="project-card__overlay">
+                                <div class="project-card__actions">
+                                    <a href="ecommerce-platform.html" class="btn btn--small btn--primary">View Details</a>
+                                    <a href="#" class="btn btn--small btn--secondary" target="_blank" rel="noopener">Live Demo</a>
+                                    <a href="#" class="btn btn--small btn--outline" target="_blank" rel="noopener">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__header">
+                                <h3 class="project-card__title">E-commerce Platform</h3>
+                                <span class="project-card__year">2024</span>
+                            </div>
+                            <p class="project-card__description">
+                                A full-featured e-commerce platform with user authentication, product management, 
+                                shopping cart, and payment integration using React and Node.js.
+                            </p>
+                            <div class="project-card__tags">
+                                <span class="tag tag--react">React</span>
+                                <span class="tag tag--nodejs">Node.js</span>
+                                <span class="tag tag--mongodb">MongoDB</span>
+                                <span class="tag tag--stripe">Stripe</span>
+                            </div>
+                            <div class="project-card__stats">
+                                <div class="stat">
+                                    <span class="stat__icon">⭐</span>
+                                    <span class="stat__value">Featured</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat__icon">👁️</span>
+                                    <span class="stat__value">1.2k views</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Task Management App -->
+                    <article class="project-card" data-category="frontend vue">
+                        <div class="project-card__image">
+                            <img src="../assets/images/projects/task-manager.jpg" alt="Task Management App" loading="lazy">
+                            <div class="project-card__overlay">
+                                <div class="project-card__actions">
+                                    <a href="task-manager.html" class="btn btn--small btn--primary">View Details</a>
+                                    <a href="#" class="btn btn--small btn--secondary" target="_blank" rel="noopener">Live Demo</a>
+                                    <a href="#" class="btn btn--small btn--outline" target="_blank" rel="noopener">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__header">
+                                <h3 class="project-card__title">Task Management App</h3>
+                                <span class="project-card__year">2024</span>
+                            </div>
+                            <p class="project-card__description">
+                                A collaborative task management application with drag-and-drop functionality, 
+                                real-time updates, and team collaboration features built with Vue.js.
+                            </p>
+                            <div class="project-card__tags">
+                                <span class="tag tag--vue">Vue.js</span>
+                                <span class="tag tag--vuex">Vuex</span>
+                                <span class="tag tag--firebase">Firebase</span>
+                                <span class="tag tag--css">CSS3</span>
+                            </div>
+                            <div class="project-card__stats">
+                                <div class="stat">
+                                    <span class="stat__icon">👁️</span>
+                                    <span class="stat__value">890 views</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Weather Dashboard -->
+                    <article class="project-card" data-category="frontend react">
+                        <div class="project-card__image">
+                            <img src="../assets/images/projects/weather-dashboard.jpg" alt="Weather Dashboard" loading="lazy">
+                            <div class="project-card__overlay">
+                                <div class="project-card__actions">
+                                    <a href="weather-dashboard.html" class="btn btn--small btn--primary">View Details</a>
+                                    <a href="#" class="btn btn--small btn--secondary" target="_blank" rel="noopener">Live Demo</a>
+                                    <a href="#" class="btn btn--small btn--outline" target="_blank" rel="noopener">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__header">
+                                <h3 class="project-card__title">Weather Dashboard</h3>
+                                <span class="project-card__year">2023</span>
+                            </div>
+                            <p class="project-card__description">
+                                An interactive weather dashboard with location-based forecasts, 
+                                beautiful animations, and responsive design using React and weather APIs.
+                            </p>
+                            <div class="project-card__tags">
+                                <span class="tag tag--react">React</span>
+                                <span class="tag tag--api">Weather API</span>
+                                <span class="tag tag--css">CSS3</span>
+                                <span class="tag tag--responsive">Responsive</span>
+                            </div>
+                            <div class="project-card__stats">
+                                <div class="stat">
+                                    <span class="stat__icon">👁️</span>
+                                    <span class="stat__value">654 views</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: Blog Platform -->
+                    <article class="project-card" data-category="fullstack nodejs">
+                        <div class="project-card__image">
+                            <img src="../assets/images/projects/blog-platform.jpg" alt="Blog Platform" loading="lazy">
+                            <div class="project-card__overlay">
+                                <div class="project-card__actions">
+                                    <a href="blog-platform.html" class="btn btn--small btn--primary">View Details</a>
+                                    <a href="#" class="btn btn--small btn--secondary" target="_blank" rel="noopener">Live Demo</a>
+                                    <a href="#" class="btn btn--small btn--outline" target="_blank" rel="noopener">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__header">
+                                <h3 class="project-card__title">Blog Platform</h3>
+                                <span class="project-card__year">2023</span>
+                            </div>
+                            <p class="project-card__description">
+                                A full-stack blog platform with content management, user authentication, 
+                                commenting system, and SEO optimization built with Node.js and Express.
+                            </p>
+                            <div class="project-card__tags">
+                                <span class="tag tag--nodejs">Node.js</span>
+                                <span class="tag tag--express">Express</span>
+                                <span class="tag tag--mongodb">MongoDB</span>
+                                <span class="tag tag--ejs">EJS</span>
+                            </div>
+                            <div class="project-card__stats">
+                                <div class="stat">
+                                    <span class="stat__icon">👁️</span>
+                                    <span class="stat__value">432 views</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: Portfolio Website -->
+                    <article class="project-card" data-category="frontend">
+                        <div class="project-card__image">
+                            <img src="../assets/images/projects/portfolio-website.jpg" alt="Portfolio Website" loading="lazy">
+                            <div class="project-card__overlay">
+                                <div class="project-card__actions">
+                                    <a href="portfolio-website.html" class="btn btn--small btn--primary">View Details</a>
+                                    <a href="#" class="btn btn--small btn--secondary" target="_blank" rel="noopener">Live Demo</a>
+                                    <a href="#" class="btn btn--small btn--outline" target="_blank" rel="noopener">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__header">
+                                <h3 class="project-card__title">Creative Portfolio</h3>
+                                <span class="project-card__year">2023</span>
+                            </div>
+                            <p class="project-card__description">
+                                A creative portfolio website with smooth animations, interactive elements, 
+                                and modern design principles using vanilla JavaScript and CSS.
+                            </p>
+                            <div class="project-card__tags">
+                                <span class="tag tag--html">HTML5</span>
+                                <span class="tag tag--css">CSS3</span>
+                                <span class="tag tag--js">JavaScript</span>
+                                <span class="tag tag--animations">Animations</span>
+                            </div>
+                            <div class="project-card__stats">
+                                <div class="stat">
+                                    <span class="stat__icon">👁️</span>
+                                    <span class="stat__value">789 views</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 6: Restaurant Website -->
+                    <article class="project-card" data-category="frontend">
+                        <div class="project-card__image">
+                            <img src="../assets/images/projects/restaurant-website.jpg" alt="Restaurant Website" loading="lazy">
+                            <div class="project-card__overlay">
+                                <div class="project-card__actions">
+                                    <a href="restaurant-website.html" class="btn btn--small btn--primary">View Details</a>
+                                    <a href="#" class="btn btn--small btn--secondary" target="_blank" rel="noopener">Live Demo</a>
+                                    <a href="#" class="btn btn--small btn--outline" target="_blank" rel="noopener">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__header">
+                                <h3 class="project-card__title">Restaurant Website</h3>
+                                <span class="project-card__year">2023</span>
+                            </div>
+                            <p class="project-card__description">
+                                A responsive restaurant website with online menu, reservation system, 
+                                and beautiful food photography gallery with smooth scrolling effects.
+                            </p>
+                            <div class="project-card__tags">
+                                <span class="tag tag--html">HTML5</span>
+                                <span class="tag tag--css">CSS3</span>
+                                <span class="tag tag--js">JavaScript</span>
+                                <span class="tag tag--responsive">Responsive</span>
+                            </div>
+                            <div class="project-card__stats">
+                                <div class="stat">
+                                    <span class="stat__icon">👁️</span>
+                                    <span class="stat__value">567 views</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="load-more">
+                    <button class="btn btn--outline btn--large" id="load-more-btn">
+                        Load More Projects
+                    </button>
+                </div>
+
+                <!-- No Results Message -->
+                <div class="no-results" id="no-results" style="display: none;">
+                    <div class="no-results__content">
+                        <h3 class="no-results__title">No projects found</h3>
+                        <p class="no-results__description">
+                            Try adjusting your search terms or filter criteria.
+                        </p>
+                        <button class="btn btn--primary" id="clear-filters">Clear All Filters</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta__content">
+                    <h2 class="cta__title">Like What You See?</h2>
+                    <p class="cta__description">
+                        I'm always excited to work on new projects and bring creative ideas to life. 
+                        Let's discuss how we can work together on your next project.
+                    </p>
+                    <div class="cta__actions">
+                        <a href="../contact.html" class="btn btn--primary">Start a Project</a>
+                        <a href="../about.html" class="btn btn--secondary">Learn More About Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3 class="footer__title">Let's Connect</h3>
+                    <p class="footer__text">Ready to bring your ideas to life? Let's work together!</p>
+                    <a href="../contact.html" class="btn btn--primary btn--small">Get In Touch</a>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Quick Links</h3>
+                    <ul class="footer__links">
+                        <li><a href="../" class="footer__link">Home</a></li>
+                        <li><a href="../about.html" class="footer__link">About</a></li>
+                        <li><a href="../projects/" class="footer__link">Projects</a></li>
+                        <li><a href="../skills.html" class="footer__link">Skills</a></li>
+                        <li><a href="../contact.html" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Follow Me</h3>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="GitHub">GitHub</a>
+                        <a href="#" class="footer__social-link" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="#" class="footer__social-link" aria-label="Twitter">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2024 Your Name. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="../js/utils.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/navigation.js"></script>
+    <script src="../js/projects-filter.js"></script>
+    <script src="../js/projects-search.js"></script>
+    <script src="../js/masonry.js"></script>
+    <script src="../js/animations.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
